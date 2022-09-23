@@ -19,6 +19,7 @@ function checkColorAndIconMenu(){
 lightModeButton.addEventListener('change', function(){
     html.classList.toggle('light-mode')
     checkColorAndIconMenu();
+    document.querySelector('.favicon').src = "./assets/img/favicon/favicon-white.ico";
 })
 
 /* SCROLL DOWN EVENT, LITTLE NAV BAR */
