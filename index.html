@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- IMPORT DE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Inika&family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Luanderson A.</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+</head>
+<body>
+    
+    <header>
+            <nav class="nav-bar">
+                <ul class="nav-bar-list">
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#">SOBRE MIM</a></li>
+                    <li><a href="#">PROJETOS</a></li>
+                    <li><a href="#">HABILIDADES</a></li>
+                </ul>
+
+                <input type="checkbox" class="checkbox-light-mode" id="checkbox-light-mode-id">
+                <label for="checkbox-light-mode-id">
+                    <svg width="17" height="17" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4001 20.4182C17.6134 20.4182 20.2183 17.8133 20.2183 14.6C20.2183 11.3867 17.6134 8.78181 14.4001 8.78181C11.1868 8.78181 8.58191 11.3867 8.58191 14.6C8.58191 17.8133 11.1868 20.4182 14.4001 20.4182Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.4 1.8V4.12727" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.4 25.0727V27.4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.3468 5.54691L6.99916 7.19927" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.8007 22.0007L23.453 23.6531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.59998 14.6H3.92725" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24.8728 14.6H27.2001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.3468 23.6531L6.99916 22.0007" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.8007 7.19927L23.453 5.54691" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </label>
+
+                <div onclick="menuShow()" class="nav-bar-list-menu-icon">
+                    <!-- ICONE 2 LINHAS -->
+                    <img class="icon" src="./assets/img/lines-icon-white.svg" alt="Icone de fechar e abrir menu">
+                </div>
+
+                <div class="nav-bar-list-menu">
+                    <ul>
+                        <li><a href="#">INÍCIO</a></li>
+                        <li><a href="#">SOBRE MIM</a></li>
+                        <li><a href="#">PROJETOS</a></li>
+                        <li><a href="#">HABILIDADES</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    
+    <main>
+        <section class="profile">
+            <div class="names">
+                <h1>Luanderson Alves</h1>
+                <h2>Desenvolvedor Full Stack</h2>
+            </div>
+            <img src="https://github.com/luandersonalvesdev.png" alt="Foto de Luanderson Alves">
+        </section>
+
+        <section class="social-button">
+            <a 
+                target="_blank"
+                href="https://www.linkedin.com/in/luandersonalvesdev/">
+                <button id="linkedin-button">
+                    <svg width="35" height="35" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.06 12.66C28.797 12.66 31.422 13.7473 33.3574 15.6827C35.2927 17.6181 36.38 20.243 36.38 22.98V35.02H29.5V22.98C29.5 22.0677 29.1376 21.1927 28.4925 20.5476C27.8473 19.9025 26.9724 19.54 26.06 19.54C25.1477 19.54 24.2727 19.9025 23.6276 20.5476C22.9824 21.1927 22.62 22.0677 22.62 22.98V35.02H15.74V22.98C15.74 20.243 16.8273 17.6181 18.7627 15.6827C20.698 13.7473 23.323 12.66 26.06 12.66V12.66Z" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.86 14.38H1.98V35.02H8.86V14.38Z" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.42 9.22C7.31986 9.22 8.86 7.67986 8.86 5.78C8.86 3.88014 7.31986 2.34 5.42 2.34C3.52014 2.34 1.98 3.88014 1.98 5.78C1.98 7.67986 3.52014 9.22 5.42 9.22Z" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Linkedin
+                </button>
+            </a>
+            <a 
+                target="_blank"
+                href="https://github.com/luandersonalvesdev">
+                <button id="github-button">
+                    <svg width="35" height="35" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.2723 37.3962C6.34924 40.3732 6.34924 32.4347 2.38 31.4424M30.1646 43.3501V35.6696C30.2391 34.7233 30.1112 33.772 29.7896 32.8789C29.4679 31.9857 28.9598 31.1713 28.2991 30.4898C34.5308 29.7952 41.08 27.4335 41.08 16.5975C41.0795 13.8266 40.0137 11.162 38.1031 9.15517C39.0078 6.73097 38.9438 4.05143 37.9245 1.67317C37.9245 1.67317 35.5826 0.978554 30.1646 4.6104C25.6159 3.3776 20.821 3.3776 16.2723 4.6104C10.8543 0.978554 8.51247 1.67317 8.51247 1.67317C7.49312 4.05143 7.42915 6.73097 8.33385 9.15517C6.40903 11.1769 5.34209 13.8656 5.35693 16.657C5.35693 27.4136 11.9062 29.7753 18.1379 30.5493C17.4849 31.224 16.9813 32.0287 16.6599 32.9109C16.3385 33.793 16.2064 34.733 16.2723 35.6696V43.3501" stroke="white" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    Github
+                </button>
+            </a>
+        </section>
+
+        <section class="swipe-down">
+            <a href="#">
+                <p>Mais em breve</p>
+                <svg width="15" height="8" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 1.86157L9.5 9.36157L17 1.86157" stroke="white" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"stroke-linejoin="round"/>
+                    </svg>
+            </a>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
