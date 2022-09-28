@@ -12,9 +12,13 @@
     --shadow-box-scrol: rgb(245, 245, 245)
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body *{
     color: var(--black-white);
-    font-family: 'Inder';
+    font-family: 'Reem Kufi Ink', Arial, Helvetica, sans-serif;
     transition-delay: linear;
     stroke: var(--black-white); /* SVG COLOR */
 } 
@@ -90,7 +94,7 @@ header .nav-bar .nav-bar-list li a{
 
 main{
     text-align: center;
-    padding-top: 135px;
+    padding-top: 135px
 }
 
 main .profile{
@@ -106,14 +110,14 @@ main .profile{
 
 main .profile h1{
     grid-area: h1;
-    font-family: 'Poppins', 'sans-serif';
-    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
     opacity: .95;
 }
 
 main .profile h2{
     grid-area: h2;
-    font-size: 17px;
+    font-size: 20px;
     opacity: .40;
 }
 
@@ -157,17 +161,114 @@ main .social-button #linkedin-button{
 
 main .social-button #github-button{
     background-image: linear-gradient(var(--body-bg), var(--body-bg)),
-    linear-gradient(320deg, #EE8434 0%, #D7B4FE 100%);
-    /* linear-gradient(30deg, #78ffd6 10%, #a8ff78 20%, #DECBA4) */;
+    linear-gradient(320deg, #EE8434, #D7B4FE);
 }
 
 main .swipe-down{
     padding-top: 210px;
+    padding-bottom: 50px;
     opacity: 50%;
     font-size: 12px;
 }
 
-/* MOBILE */
+main .swipe-down #arrowDown{
+    animation-name: upToDown;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+}
+
+main .about-me{
+    padding: 30px 0;
+    text-align: center;
+}
+
+main .about-me h2{
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    display: inline;
+    font-size: 160px;
+    opacity: 0.95;
+    text-transform: uppercase;
+    border-bottom: 1px solid linear-gradient(30deg, #78ffd6 10%, #a8ff78 20%, #DECBA4);
+}
+
+main .about-me h2::after{
+    width: 97%;
+    background-image: linear-gradient(90deg, #a3ffc8 17%,#ffd571 40%,  #f7797d);
+}
+
+main .about-me p{
+    width: 50%;
+    font-size: 17px;
+    text-align: justify;
+}
+
+main .projects{
+    padding: 50px 0;
+    text-align: center;
+}
+
+main .projects h2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 14vw;
+    opacity: 0.95;
+    text-transform: uppercase;
+}
+
+main .projects h2::after{
+    width: 800px;
+    background-image: linear-gradient(90deg,#930DFD, #EAD637 ,  #2BFFF2);
+}
+
+main .projects p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+main .about-me h2::after, main .projects h2{
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 14%;
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    height: 7px;
+}
+
+main .projects ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+main .projects ul li{
+    border-radius: 6px;
+    width: 310px;
+    height: 380px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+main .projects ul li a img{
+    width: auto;
+    height: 100%;
+    transition: transform .3s;
+    
+}
+
+/* ############# MOBILE ############# */
 .nav-bar-list-menu-icon{
     display: none;
 }
@@ -184,7 +285,7 @@ main .swipe-down{
     display: none;
 }
 
-/* ALL HOVER */
+/* ############# ALL HOVER  ############# */
 /* LIGHT MODE BUTTON E IMG DO PERFIL */
 header .nav-bar label:hover, main .profile img:hover{
     border: 1px solid var(--black-white);
@@ -192,13 +293,27 @@ header .nav-bar label:hover, main .profile img:hover{
 }
 
 /* SOCIALS BUTTON */
-main > .social-button > a > button:hover{
+main  .social-button  a  button:hover, main .projects ul li img:hover{
     transform: scale(1.02);
 }
 
+/* KEY FRAMES ANIMATIONS */
 
+@keyframes upToDown{
+    0%, 100%{ 
+        transform: translateY(-2px); 
+    }
+    50%{ 
+        transform: translateY(2px); 
+    }
+}
 
-/* MEDIA QUERY */
+@keyframes downToUp{
+    from{ transform: translateY(5px); }
+    to{ transform: translateY(-5px); }
+}
+
+/* ############# MEDIA QUERY ############# */
 
 
 @media (max-width: 1100px){
@@ -213,6 +328,14 @@ main > .social-button > a > button:hover{
 
     main .profile img{
         width: 170px;
+    }
+
+    main .profile .names h1{
+        font-size: 57px;
+    }
+
+    main .about-me h2{
+        font-size: 140px;
     }
 
 }
@@ -252,6 +375,11 @@ main > .social-button > a > button:hover{
     main .swipe-down{
         padding-top: 50px;
     }
+
+    main .about-me h2{
+        font-size: 110px;
+    }
+
 }
 
 @media (max-width: 749px){
@@ -261,7 +389,6 @@ main > .social-button > a > button:hover{
     }
 
     header{
-        /* background-color: aqua; */
         width: 100%;
         height: 120px;
         padding: 0 10%;
@@ -348,7 +475,7 @@ main > .social-button > a > button:hover{
     }
 
     main .profile .names h2{
-        font-size: 12px;
+        font-size: 15px;
         opacity: .7;
     }
 
@@ -378,6 +505,7 @@ main > .social-button > a > button:hover{
     }
 
     main .swipe-down{
+        padding-top: 160px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -387,5 +515,23 @@ main > .social-button > a > button:hover{
     main .swipe-down a svg{
         margin-top: 10px;
         width: 12px;
+    }
+
+    main .about-me p{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    main .about-me h2{
+        font-size: 53px;
+    }
+
+    main .about-me h2::after, main .projects h2{
+        height: 5px;
+        bottom: 8%;
+    }
+
+    main .about-me p{
+        margin-top: 20px;
     }
 }

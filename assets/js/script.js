@@ -19,7 +19,7 @@ function checkColorAndIconMenu(){
 lightModeButton.addEventListener('change', function(){
     html.classList.toggle('light-mode')
     checkColorAndIconMenu();
-    document.querySelector('.favicon').src = "./assets/img/favicon/favicon-white.ico";
+    
 })
 
 /* SCROLL DOWN EVENT, LITTLE NAV BAR */
@@ -30,12 +30,20 @@ window.addEventListener('scroll', function(){
 
 /* SHOW MENU MOBILE */
 function menuShow(){
-    if(navBarListMenu.classList.contains('open') ){
+    if(navBarListMenu.classList.contains('open')){
         navBarListMenu.classList.remove('open');
         checkColorAndIconMenu();
+        closeMenuMobile();
     }else{
         navBarListMenu.classList.add('open')
         checkColorAndIconMenu();
     }
 }
 
+/* CLOSE MENU IF CLICK ON LINK MENU MOBILE */
+function closeMenuMobile(){
+    if(navBarListMenu.classList.contains('open')){
+        navBarListMenu.classList.remove;
+        checkColorAndIconMenu();
+    }
+}
