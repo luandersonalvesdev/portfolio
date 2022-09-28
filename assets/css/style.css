@@ -329,6 +329,7 @@ main > .social-button > a > button:hover{
 
     
     main{
+        height: 100vh;
         display: flex;
         padding-top: 90px;
         flex-wrap: wrap;
