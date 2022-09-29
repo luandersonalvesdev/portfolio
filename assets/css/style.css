@@ -3,6 +3,7 @@
     --checkbox-bg: #444444;
     --black-white: white;
     --shadow-box-scrol: rgb(17, 17, 17)
+    --background-gradient: linear-gradient(30deg, #12c2e9, #f64f59);
 }
 
 .light-mode:root{
@@ -165,7 +166,7 @@ main .social-button #github-button{
 }
 
 main .swipe-down{
-    padding-top: 210px;
+    padding-top: 170px;
     padding-bottom: 50px;
     opacity: 50%;
     font-size: 12px;
@@ -191,12 +192,11 @@ main .about-me h2{
     font-size: 160px;
     opacity: 0.95;
     text-transform: uppercase;
-    border-bottom: 1px solid linear-gradient(30deg, #78ffd6 10%, #a8ff78 20%, #DECBA4);
 }
 
 main .about-me h2::after{
     width: 97%;
-    background-image: linear-gradient(90deg, #a3ffc8 17%,#ffd571 40%,  #f7797d);
+    background-image: linear-gradient(90deg, #7bffb0 17%,#ffd571 40%,  #f7797d);
 }
 
 main .about-me p{
@@ -213,15 +213,17 @@ main .projects{
 main .projects h2{
     position: relative;
     text-align: center;
-    width: 100%;
-    font-size: 14vw;
+    width: auto;
+    height: auto;
+    display: inline;
+    font-size: 180px;
     opacity: 0.95;
     text-transform: uppercase;
 }
 
 main .projects h2::after{
-    width: 800px;
-    background-image: linear-gradient(90deg,#930DFD, #EAD637 ,  #2BFFF2);
+    width: 97%;
+    background-image: linear-gradient(90deg,#930DFD, #FF6666 ,  #19fff0);
 }
 
 main .projects p{
@@ -229,11 +231,11 @@ main .projects p{
     font-size: 12px;
 }
 
-main .about-me h2::after, main .projects h2{
+main .about-me h2::after, main .projects h2::after{
     content: '';
     right: 0;
     left: 0;
-    bottom: 14%;
+    bottom: 12%;
     margin: 0 auto;
     position: absolute;
     display: block;
@@ -247,25 +249,76 @@ main .projects ul{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
+}
+
+main .projects ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main .projects ul li{
-    border-radius: 6px;
-    width: 310px;
-    height: 380px;
+    width: 210px;
+    height: 290px;
     overflow: hidden;
-
+    border-radius: 6px;
     display: flex;
     justify-content: center;
-    align-items: top;
+    box-shadow: -3.5px 3.5px rgb(131, 131, 131);
+    transition-duration: .2s;
+    position: relative;
 }
 
-main .projects ul li a img{
-    width: auto;
+main .projects ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
     height: 100%;
-    transition: transform .3s;
-    
+}
+
+
+main .projects ul li a img{
+    width: 100%;
+    height: 100%;
+    filter: blur(20px) grayscale(20%);
+    z-index: 2;
+    /* filter: brightness(-1); */
+}
+
+main .projects ul li a .project-details{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+    width: 100%;
+    height: 30%;
+    background-color: var(--checkbox-bg);
+    /* opacity: .7; */
+    text-align: start;
+    padding: 0 10px;
+    padding-top: 5px;
+} 
+
+
+main .projects ul li a .project-details h3{
+    font-size: 16px;
+}
+
+main .projects ul li a .project-details p{
+    font-size: 13px;
+    text-transform: lowercase;
+    margin-bottom: 8px;
+}
+
+main .projects ul li a .project-details span{
+    background-color: var(--body-bg);
+    opacity: .5;
+    padding: 0 10px;
+    border-radius: 50px;
+    margin-right: 2px;
+    font-size: 13px;
 }
 
 /* ############# MOBILE ############# */
@@ -293,9 +346,14 @@ header .nav-bar label:hover, main .profile img:hover{
 }
 
 /* SOCIALS BUTTON */
-main  .social-button  a  button:hover, main .projects ul li img:hover{
+main  .social-button a button:hover{
     transform: scale(1.02);
 }
+
+main .projects ul li:hover{
+    transform: translate3d(2px, -2px, 1px);
+}
+
 
 /* KEY FRAMES ANIMATIONS */
 
@@ -338,6 +396,10 @@ main  .social-button  a  button:hover, main .projects ul li img:hover{
         font-size: 140px;
     }
 
+    main .projects h2{
+        font-size: 150px;
+    }
+
 }
 
 @media (max-width: 899px){
@@ -378,6 +440,10 @@ main  .social-button  a  button:hover, main .projects ul li img:hover{
 
     main .about-me h2{
         font-size: 110px;
+    }
+
+    main .projects h2{
+        font-size: 120px;
     }
 
 }
@@ -526,12 +592,60 @@ main  .social-button  a  button:hover, main .projects ul li img:hover{
         font-size: 53px;
     }
 
-    main .about-me h2::after, main .projects h2{
+    main .about-me h2::after, main .projects h2::after{
         height: 5px;
-        bottom: 8%;
+        bottom: 6%;
     }
 
     main .about-me p{
         margin-top: 20px;
+    }
+
+    main .projects h2{
+        font-size:57px;
+    }
+
+    main .projects ul li{
+        width: 270px;
+        height: 140px;
+    }
+
+    main .projects ul li a .project-details{
+        height: 35%;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "h3 techs"
+        "p techs";
+        justify-items: flex-start;
+        align-items: flex-start;
+        padding: 0 5px;
+    }
+
+    main .projects ul li a .project-details .techs{
+        grid-area: techs;
+        display: flex;
+    }
+
+    main .projects ul li a .project-details .techs h3{
+        grid-area: h3;
+        font-size: 14px;
+    }
+
+    main .projects ul li a .project-details .techs p{
+        grid-area: p;
+        font-size: 11px;
+    }
+
+    main .projects ul li a .project-details .techs span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5px;
+        grid-area: span;
+        font-size: 12px;
+        padding: 2px 6px;
     }
 }
