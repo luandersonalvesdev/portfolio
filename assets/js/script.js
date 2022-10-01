@@ -5,13 +5,13 @@ const navBarListMenu = document.querySelector('.nav-bar-list-menu');
 /* LOGIC TO BUTTON COLOR CHANGE */
 function checkColorAndIconMenu(){
     if(html.classList.contains('light-mode') && navBarListMenu.classList.contains('open')){
-        document.querySelector('.icon').src = "./assets/img/x-icon-black.svg";
+        document.querySelector('.icon').src = "./assets/img/svg/x-icon-black.svg";
     }else if(html.classList.contains('light-mode') == false && navBarListMenu.classList.contains('open') == true){
-        document.querySelector('.icon').src = "./assets/img/x-icon-white.svg";
+        document.querySelector('.icon').src = "./assets/img/svg/x-icon-white.svg";
     }else if(html.classList.contains('light-mode') == true && navBarListMenu.classList.contains('open') == false){
-        document.querySelector('.icon').src = "./assets/img/lines-icon-black.svg";
+        document.querySelector('.icon').src = "./assets/img/svg/lines-icon-black.svg";
     }else if(html.classList.contains('light-mode') == false && navBarListMenu.classList.contains('open') == false){
-        document.querySelector('.icon').src = "./assets/img/lines-icon-white.svg";
+        document.querySelector('.icon').src = "./assets/img/svg/lines-icon-white.svg";
     }
 }
 
@@ -19,7 +19,6 @@ function checkColorAndIconMenu(){
 lightModeButton.addEventListener('change', function(){
     html.classList.toggle('light-mode')
     checkColorAndIconMenu();
-    
 })
 
 /* SCROLL DOWN EVENT, LITTLE NAV BAR */

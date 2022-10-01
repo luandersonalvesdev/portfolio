@@ -2,8 +2,7 @@
     --body-bg: #111111;
     --checkbox-bg: #444444;
     --black-white: white;
-    --shadow-box-scrol: rgb(17, 17, 17)
-    --background-gradient: linear-gradient(30deg, #12c2e9, #f64f59);
+    --shadow-box-scrol: rgb(17, 17, 17);
 }
 
 .light-mode:root{
@@ -206,7 +205,7 @@ main .about-me p{
 }
 
 main .projects{
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -231,7 +230,7 @@ main .projects p{
     font-size: 12px;
 }
 
-main .about-me h2::after, main .projects h2::after{
+main .about-me h2::after, main .projects h2::after, main .skills h2::after{
     content: '';
     right: 0;
     left: 0;
@@ -250,29 +249,27 @@ main .projects ul{
     align-items: center;
     padding: 20px;
     gap: 20px;
-}
-
-main .projects ul{
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 0;
 }
 
 main .projects ul li{
     width: 210px;
     height: 290px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
-    box-shadow: -3.5px 3.5px rgb(131, 131, 131);
+    align-items: center;
     transition-duration: .2s;
     position: relative;
 }
 
 main .projects ul li a{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 100%;
@@ -280,11 +277,10 @@ main .projects ul li a{
 
 
 main .projects ul li a img{
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     filter: blur(20px) grayscale(20%);
     z-index: 2;
-    /* filter: brightness(-1); */
 }
 
 main .projects ul li a .project-details{
@@ -295,7 +291,6 @@ main .projects ul li a .project-details{
     width: 100%;
     height: 30%;
     background-color: var(--checkbox-bg);
-    /* opacity: .7; */
     text-align: start;
     padding: 0 10px;
     padding-top: 5px;
@@ -319,6 +314,96 @@ main .projects ul li a .project-details span{
     border-radius: 50px;
     margin-right: 2px;
     font-size: 13px;
+}
+
+main .skills{
+    padding: 70px 0;
+    text-align: start;
+}
+
+main .skills h2{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline;
+    font-size: 150px;
+    opacity: 0.95;
+    text-transform: uppercase;
+}
+
+main .skills h2::after{
+    width: 98%;
+    background-image: linear-gradient(90deg,#F5EE9E 20%, #349df3 40%, #ff61b0 100%);
+}
+
+main .skills .container-skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    margin-top: 70px;
+    opacity: .93;
+}
+
+main .skills .container-skills ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+main .skills .container-skills ul p{
+    width: 100%;
+    grid-area: p;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 30px;
+    opacity: .3;
+}
+
+main .skills .container-skills ul::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-white);
+}
+
+main .skills ul li{
+    position: relative;
+}
+
+main .skills ul li span{
+    position: absolute;
+    top: -22px;
+    left: -100px;
+    right: -100px;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+main .skills ul li:hover span{
+    display: block;
+}
+
+main .skills .container-skills ul li svg{
+    fill: var(--black-white);
+    width: 40px;
+    height: 40px;
+    transition-duration: .3s;
+    position: relative;
+}
+
+main .skills ul li svg:hover{
+    transform: translateY(-2px);
+}
+
+main .skills .container-skills ul li .responsive, main .skills .container-skills ul li .autocad{
+    stroke-width: .01px;
 }
 
 /* ############# MOBILE ############# */
@@ -351,7 +436,7 @@ main  .social-button a button:hover{
 }
 
 main .projects ul li:hover{
-    transform: translate3d(2px, -2px, 1px);
+    transform: translateY(-3px) scale(1.01);
 }
 
 
@@ -400,6 +485,10 @@ main .projects ul li:hover{
         font-size: 150px;
     }
 
+    main .skills h2{
+        font-size: 120px;
+    }
+
 }
 
 @media (max-width: 899px){
@@ -444,6 +533,10 @@ main .projects ul li:hover{
 
     main .projects h2{
         font-size: 120px;
+    }
+
+    main .skills h2{
+        font-size: 100px;
     }
 
 }
@@ -648,4 +741,41 @@ main .projects ul li:hover{
         font-size: 12px;
         padding: 2px 6px;
     }
+
+    main .skills h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    main .skills h2::after{
+        bottom: -2px;
+    }
+
+    
+
+    main .skills .container-skills{
+        row-gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        justify-content: flex-start;
+    }
+
+    main .skills .container-skills ul{
+        width: 65%;
+    }
+
+    main .skills .container-skills ul p{
+        font-size: 12px;
+    }
+
+    main .skills .container-skills ul li svg{
+        width: 35px;
+        height: 35px;
+    }
+
+    main .skills{
+        padding: 40px 0;
+        text-align: start;
+    }
+
 }
