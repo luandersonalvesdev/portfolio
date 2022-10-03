@@ -773,7 +773,7 @@ main .skills ul li svg:hover{
 
     main .skills{
         padding: 40px 0;
-        text-align: start;
+        text-align: center;
     }
 
     main .skills h2{
@@ -789,7 +789,7 @@ main .skills ul li svg:hover{
         row-gap: 40px;
         flex-wrap: wrap;
         margin-top: 60px;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     main .skills .container-skills ul{
