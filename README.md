@@ -1,6 +1,6 @@
 ># Meu portfólio
 
-## ⚠️ Projeto ainda em desenvolvimento
+## Projeto completo!
 
 ![preview](./assets/github/preview.png)
 
