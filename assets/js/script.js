@@ -15,11 +15,19 @@ function checkColorAndIconMenu(){
     }
 };
 
-/* CHANGE THEME TO LIGHT MODE */
+/* CHANGE THEME TO LIGHT MODE AND SAVE IN LOCALSTORAGE*/
 lightModeButton.addEventListener('change', function(){
     html.classList.toggle('light-mode')
     checkColorAndIconMenu();
+    localStorage.setItem('lightMode', JSON.stringify(html.className));
 });
+
+/* LOAD LIGHT MODE IN LOCALSTORAGE */
+(function(){
+    if (localStorage.getItem('lightMode') !== null) {
+        html.className = JSON.parse(localStorage.getItem('lightMode'));
+    }
+}());
 
 /* SCROLL DOWN EVENT, LITTLE NAV BAR */
 window.addEventListener('scroll', function(){
@@ -52,6 +60,7 @@ function closeMenuMobile(){
 // getting UL from HTML
 const getUl = document.querySelector('#projects ul');
 
+// all projectes
 const myProjects = [
     {
         title: 'My Gallery',
@@ -113,6 +122,7 @@ const myProjects = [
     },
 ];
 
+// function to do this
 const fAddProjects = () => {
     myProjects.forEach((value) => {
         const createLi = document.createElement('li');
