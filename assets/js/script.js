@@ -62,7 +62,7 @@ const getUl = document.querySelector('#projects ul');
 
 // all projectes
 const myProjects = [
-    {
+    { // MY GALLERY
         title: 'My Gallery',
         description: 'Página web',
         tags: [
@@ -74,7 +74,18 @@ const myProjects = [
         alt: 'Imagem do projeto My Gallery',
         link: 'https://luandersonalvesdev.github.io/my-gallery/',
     },
-    {
+    { // PIXEL ART
+        title: 'Pixel art',
+        description: 'Página web',
+        tags: [
+                'DOM',
+                'js',
+            ],
+        img: './assets/img/projects/pixel-art.png',
+        alt: 'Imagem do projeto Pixel art',
+        link: 'https://luandersonalvesdev.github.io/pixel-art/',
+    },
+    { // FALAS DO LOL
         title: 'Falas do lol',
         description: 'Página web',
         tags: [
@@ -86,7 +97,7 @@ const myProjects = [
         alt: 'Imagem do projeto Falas do lol',
         link: 'https://luandersonalvesdev.github.io/falas-campeoes-lol/',
     },
-    {
+    { // LAGUM MEDIA PLAYER
         title: 'Lagum media player',
         description: 'App android',
         tags: [
@@ -97,7 +108,7 @@ const myProjects = [
         alt: 'Imagem do projeto Lagum media player',
         link: 'https://www.linkedin.com/posts/luandersonalvesdev_java-mobile-dev-activity-6968633119121768448-f8kR?utm_source=share&utm_medium=member_desktop/',
     },
-    {
+    { // NLW CHALLENGER
         title: 'NLW Challenger',
         description: 'Página web',
         tags: [
@@ -108,7 +119,7 @@ const myProjects = [
         alt: 'Imagem do projeto NLW Challenger',
         link: 'https://luandersonalvesdev.github.io/nlw-challenger/',
     },
-    {
+    { //NLW E-SPORTS
         title: 'NLW E-Sports',
         description: 'Página web',
         tags: [
