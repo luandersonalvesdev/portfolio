@@ -54,25 +54,62 @@ const getUl = document.querySelector('#projects ul');
 
 const myProjects = [
     {
-        title: 'Teste',
-        description: 'pagina web',
-        tags: [
-                'html',
-                'css'
-            ],
-        img: './assets/img/projects/project-5.jpg',
-        link: 'https://luandersonalvesdev.github.io/my-gallery/',
-    },
-    {
-        title: 'Segundo teste',
-        description: 'jogo web',
+        title: 'My Gallery',
+        description: 'Página web',
         tags: [
                 'html',
                 'css',
-                'js'
+                'js',
             ],
-        img: './assets/img/projects/project-5.jpg',
+        img: './assets/img/projects/my-gallery.jpg',
+        alt: 'Imagem do projeto My Gallery',
+        link: 'https://luandersonalvesdev.github.io/my-gallery/',
+    },
+    {
+        title: 'Falas do lol',
+        description: 'Página web',
+        tags: [
+                'html',
+                'css',
+                'js',
+            ],
+        img: './assets/img/projects/falas-do-lol.jpg',
+        alt: 'Imagem do projeto Falas do lol',
         link: 'https://luandersonalvesdev.github.io/falas-campeoes-lol/',
+    },
+    {
+        title: 'Lagum media player',
+        description: 'App android',
+        tags: [
+                'java',
+                'android studio',
+            ],
+        img: './assets/img/projects/lagum-media-player.jpg',
+        alt: 'Imagem do projeto Lagum media player',
+        link: 'https://www.linkedin.com/posts/luandersonalvesdev_java-mobile-dev-activity-6968633119121768448-f8kR?utm_source=share&utm_medium=member_desktop/',
+    },
+    {
+        title: 'NLW Challenger',
+        description: 'Página web',
+        tags: [
+                'html',
+                'css',
+            ],
+        img: './assets/img/projects/nlw-challenger.jpg',
+        alt: 'Imagem do projeto NLW Challenger',
+        link: 'https://luandersonalvesdev.github.io/nlw-challenger/',
+    },
+    {
+        title: 'NLW E-Sports',
+        description: 'Página web',
+        tags: [
+                'html',
+                'css',
+                'js',
+            ],
+        img: './assets/img/projects/nlw-e-sports.jpg',
+        alt: 'Imagem do projeto NLW E-Sports',
+        link: 'https://luandersonalvesdev.github.io/nlw-e-sports/',
     },
 ];
 
@@ -94,6 +131,7 @@ const fAddProjects = () => {
             createH3.innerText = value.title;
             createP.innerText = value.description;
             createImg.src = value.img;
+            createImg.alt = value.alt;
         }
 
         getUl.appendChild(createLi);
