@@ -74,11 +74,22 @@ const myProjects = [
         alt: 'Imagem do projeto My Gallery',
         link: 'https://luandersonalvesdev.github.io/my-gallery/',
     },
+    { // POLAROID PET
+        title: 'Polaroid pet',
+        description: 'Página web',
+        tags: [
+                'async',
+                'api',
+            ],
+        img: './assets/img/projects/polaroid-pet.jpg',
+        alt: 'Imagem do projeto Polaroid pet',
+        link: 'https://polaroid-pet.surge.sh/',
+    },
     { // PIXEL ART
         title: 'Pixel art',
         description: 'Página web',
         tags: [
-                'DOM',
+                'dom',
                 'js',
             ],
         img: './assets/img/projects/pixel-art.png',
