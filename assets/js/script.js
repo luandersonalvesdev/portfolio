@@ -96,6 +96,18 @@ const myProjects = [
         alt: 'Imagem do projeto Pixel art',
         link: 'https://luandersonalvesdev.github.io/pixel-art/',
     },
+    { // CONVERT COIN
+        title: 'Convert coin',
+        description: 'Página web',
+        tags: [
+                'async',
+                'api',
+                'dom',
+            ],
+        img: './assets/img/projects/convert-coin.jpg',
+        alt: 'Imagem do projeto Convert Coin',
+        link: 'http://convert-coin.surge.sh/',
+    },
     { // FALAS DO LOL
         title: 'Falas do lol',
         description: 'Página web',
