@@ -62,6 +62,18 @@ const getUl = document.querySelector('#projects ul');
 
 // all projectes
 const myProjects = [
+    { // TUNES
+        title: 'Tunes',
+        description: 'Página web',
+        tags: [
+                'react',
+                'router-v5',
+                'css',
+            ],
+        img: './assets/img/projects/tunes.jpg',
+        alt: 'Imagem do projeto NLW Challenger',
+        link: 'https://luandersonalvesdev.github.io/tunes/#/',
+    },
     { // MY GALLERY
         title: 'My Gallery',
         description: 'Página web',
@@ -141,18 +153,6 @@ const myProjects = [
         img: './assets/img/projects/nlw-challenger.jpg',
         alt: 'Imagem do projeto NLW Challenger',
         link: 'https://luandersonalvesdev.github.io/nlw-challenger/',
-    },
-    { //NLW E-SPORTS
-        title: 'NLW E-Sports',
-        description: 'Página web',
-        tags: [
-                'html',
-                'css',
-                'js',
-            ],
-        img: './assets/img/projects/nlw-e-sports.jpg',
-        alt: 'Imagem do projeto NLW E-Sports',
-        link: 'https://luandersonalvesdev.github.io/nlw-e-sports/',
     },
 ];
 
