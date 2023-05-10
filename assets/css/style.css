@@ -391,7 +391,7 @@ main .skills ul li{
 
 main .skills ul li span{
     position: absolute;
-    top: -22px;
+    top: -10px;
     left: -100px;
     right: -100px;
     margin: 0 auto;
@@ -407,6 +407,7 @@ main .skills .container-skills ul li svg{
     height: 40px;
     transition-duration: .3s;
     position: relative;
+    margin-top: 10px;
 }
 
 main .skills .container-skills ul li .responsive, main .skills .container-skills ul li .autocad{

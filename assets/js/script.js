@@ -74,8 +74,20 @@ const myProjects = [
         alt: 'Imagem do projeto NLW Challenger',
         link: 'https://luandersonalvesdev.github.io/tunes/#/',
     },
+    { // SUPER TRUNFO
+        title: 'Super trunfo',
+        description: 'Página web',
+        tags: [
+                'react',
+                'jsx',
+                'css',
+            ],
+        img: './assets/img/projects/super-trunfo.jpg',
+        alt: 'Imagem do projeto Super trunfo',
+        link: 'https://github.com/luandersonalvesdev/super-trunfo-game',
+    },
     { // MY GALLERY
-        title: 'My Gallery',
+        title: 'My gallery',
         description: 'Página web',
         tags: [
                 'html',
@@ -142,17 +154,6 @@ const myProjects = [
         img: './assets/img/projects/lagum-media-player.jpg',
         alt: 'Imagem do projeto Lagum media player',
         link: 'https://www.linkedin.com/posts/luandersonalvesdev_java-mobile-dev-activity-6968633119121768448-f8kR?utm_source=share&utm_medium=member_desktop/',
-    },
-    { // NLW CHALLENGER
-        title: 'NLW Challenger',
-        description: 'Página web',
-        tags: [
-                'html',
-                'css',
-            ],
-        img: './assets/img/projects/nlw-challenger.jpg',
-        alt: 'Imagem do projeto NLW Challenger',
-        link: 'https://luandersonalvesdev.github.io/nlw-challenger/',
     },
 ];
 
