@@ -8,15 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-black': '#111111',
-        'stroke-black': '#282828',
-        'second-text-black': '#959595',
-        'secondary-black': '#2F2F2F',
-        'main-white': '#F3F3F3',
+        'main-dark': '#111111',
+        'secondary-dark': '#2F2F2F',
+        'stroke-dark': '#282828',
+        'second-text-dark': '#959595',
+        'main-white-dark': '#EFEFEF',
+        'main-light': '#FAFAFA',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
+      },
+      scale: {
+        '1025': '1.025',
       }
     },
   },
