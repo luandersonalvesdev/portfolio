@@ -1,6 +1,7 @@
 import About from "../../components/About";
 import Header from "../../components/Header";
 import Profile from "../../components/Profile";
+import Projects from "../../components/Projects";
 
 
 export default function Home() {
@@ -10,13 +11,14 @@ export default function Home() {
         w-screen
         max-w-2xl
         md:px-0
-        pl-8
+        px-5
         font-inter
       "
     >
       <Header />
       <Profile />
       <About />
+      <Projects />
     </main>
   );
 }
