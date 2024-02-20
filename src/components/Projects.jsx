@@ -3,7 +3,7 @@ import allProjects from "../data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="md:pt-24 mb-10 pt-16 w-full">
+    <section id="projects" className="md:pt-24 pt-16 w-full">
       <h2 className="font-semibold dark:text-main-white-dark md:text-xl text-lg">Projetos</h2>
       <ul className="mt-5 columns-2 md:columns-3 dark:text-main-white-dark text-xl gap-3">
         {
