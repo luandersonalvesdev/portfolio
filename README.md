@@ -1,28 +1,19 @@
-># Meu portfólio
+># Portfólio
 
-## Projeto completo!
+![preview](./assets/preview.png)
 
-![preview](./assets/github/preview.png)
+### [Acesse aqui!](https://luandersonalvesdev.github.io/portfolio)
 
-## Sobre o projeto
-        Criei o portfólio no propósito de ter uma página específica para compartilhar os meus projetos ao longo do tempo.
-        Irei sempre estar atualizando de adicionando novas tecnologias, paginas e afins.
+### Sobre o projeto
+Criei o portfólio no propósito de ter uma página específica para compartilhar os meus projetos, redes e afins.
 
-># 🔗 [Acesse clicando aqui!](https://luandersonalvesdev.github.io/portfolio)
+### Estilização
+O minimalismo é mais do que uma preferência estética para mim; é uma abordagem que busco incorporar em todos os meus projetos. Acredito que a simplicidade pode potencializar a comunicação e a usabilidade, proporcionando uma experiência mais intuitiva para os usuários.
 
-## 👨‍💻 APRENDIZADO
-- Adição de classes em tags pós execução.
-- Sistema de dark mode.
-- Alteração de imagens ".svg".
-- Responsividade em 100% dos aparelhos.
-- Nav-bar para mobile.
 
-## 🛠️ TECNOLOGIAS USADAS 
-- HTML
-- CSS
+### Tecnologias Usadas 
+- Vite
+- React
+- Tailwind CSS
+- GH Pages
 - JavaScript
-- GIT e Github
-
-## CONTATO
-
-https://linkedin.com/in/luandersonalvesdev
