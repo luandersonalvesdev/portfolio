@@ -33,14 +33,14 @@ export default function Profile() {
       <div className="mt-8 gap-4 flex">
         <a
           className="border dark:border-stroke-dark shadow rounded-full h-full pt-1.5 pb-0.5 pl-9 pr-7 transition duration-150 hover:scale-1025 hover:shadow-lg hover:brightness-105"
-          href="https://github.com/luandersonalvesdev"
+          href="https://linkedin.com/in/luandersonalvesdev"
           target="_blank"
           >
             <LinkedinSvg />
         </a>
         <a
           className="border dark:border-stroke-dark shadow rounded-full h-full py-1 px-8 transition duration-150 hover:scale-1025 hover:shadow-lg hover:brightness-105"
-          href="https://linkedin.com/in/luandersonalvesdev"
+          href="https://github.com/luandersonalvesdev"
           target="_blank"
           >
             <GithubSvg />

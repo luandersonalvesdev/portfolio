@@ -13,7 +13,7 @@ const allProjects = [
   },
   {
     name: 'Botnardo Da Vinci',
-    description: 'Bot do twitter que posta imagens com DALL·E 2 com ideia do GPT-3 por 90 dias.',
+    description: 'Bot do que posta imagens com DALL·E 2 com ideia do GPT-3 por 90 dias.',
     technologies: ['python', 'open-ai', 'bot'],
     link: 'https://github.com/luandersonalvesdev/twitter-bot-botnardo-da-vinci',
   },
