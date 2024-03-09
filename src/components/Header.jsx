@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="pt-16 text-base dark:text-main-white-dark">
+    <header className="mt-14 text-xs md:text-base md:mt-20 dark:text-main-white-dark">
       <ul className="flex gap-4 md:gap-6">
         <li>
           <a href="#profile">início</a>
