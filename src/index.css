@@ -4,3 +4,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('../assets/fonts/Geist/Geist-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('../assets/fonts/Geist.Mono/GeistMono-Regular.otf');
+}

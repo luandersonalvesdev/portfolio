@@ -18,6 +18,8 @@ module.exports = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
+        'geist': ['Geist Sans', 'sans-serif'],
+        'geist-mono': ['Geist Mono', 'sans-serif'],
       },
       scale: {
         '1025': '1.025',

@@ -12,9 +12,9 @@ export default function Home() {
     <main 
       className="
         max-w-2xl
-        md:px-0
-        px-10
-        font-inter
+        font-geist
+        px-7
+        mx-auto
       "
     >
       <Header />
