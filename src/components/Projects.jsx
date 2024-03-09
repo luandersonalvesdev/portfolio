@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section id="projects" className="mt-14 md:mt-20">
       <div className="inline-block">
-        <h2 className="font-semibold dark:text-main-white-dark md:text-xl text-base">Projetos</h2>
+        <h2 className="font-semibold dark:text-main-white-dark md:text-xl text-lg">Projetos</h2>
         <hr class="h-[3px] md:mt-[1px] border-0 rounded-full dark:bg-gradient-to-r from-emerald-400 via-fuchsia-400 to-amber-400"></hr>
       </div>
       <ul className="mt-2 md:mt-5 grid md:grid-cols-3 grid-cols-2 grid-auto-rows-auto dark:text-main-white-dark text-xl gap-3">
