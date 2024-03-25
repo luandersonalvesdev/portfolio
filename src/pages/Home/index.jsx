@@ -9,14 +9,7 @@ import FindMe from "../../components/FindMe";
 
 export default function Home() {
   return (
-    <main 
-      className="
-        max-w-2xl
-        font-geist
-        px-7
-        mx-auto
-      "
-    >
+    <main className="max-w-2xl font-geist px-7 mx-auto">
       <Header />
       <Profile />
       <About />

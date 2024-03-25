@@ -18,7 +18,7 @@ export default function Profile() {
         <div className="flex flex-col">
           <h1
             className="
-                dark:text-main-white-dark
+                dark:text-c-main-white-dark
                 font-geist
                 font-bold
                 inline
@@ -29,7 +29,7 @@ export default function Profile() {
               Luanderson Alves
           </h1>
           <p
-            className="dark:text-second-text-dark inline md:text-base text-sm"
+            className="dark:text-c-second-text-dark inline md:text-base text-sm"
           >
             Desenvolvedor Web Full Stack.
           </p>

@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-dark': '#111111',
-        'secondary-dark': '#2F2F2F',
-        'stroke-dark': '#282828',
-        'second-text-dark': '#959595',
-        'main-white-dark': '#EFEFEF',
-        'main-light': '#FAFAFA',
+        'c-main-dark': '#111111',
+        'c-secondary-dark': '#2F2F2F',
+        'c-stroke-dark': '#282828',
+        'c-second-text-dark': '#959595',
+        'c-main-white-dark': '#EFEFEF',
+        'c-main-light': '#FAFAFA',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
