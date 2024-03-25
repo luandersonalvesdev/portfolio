@@ -4,10 +4,10 @@ export default function Skills() {
   return (
     <section id="skills" className="mt-14 md:mt-20">
       <div className="inline-block">
-        <h2 className="font-semibold dark:text-c-main-white-dark md:text-xl text-base">Habilidades</h2>
-        <hr class="h-[3px] md:mt-[1px] border-0 rounded-full dark:bg-gradient-to-r from-green-400 via-rose-400 to-violet-500"></hr>
+        <h2 className="font-semibold dark:text-c-main-white-dark text-c-main-black-light md:text-xl text-base">Habilidades</h2>
+        <hr class="h-[3px] md:mt-[1px] border-0 rounded-full bg-gradient-to-r from-green-400 via-rose-400 to-violet-500"></hr>
       </div>
-      <ul className="mt-4 flex flex-wrap dark:text-c-main-white-dark w-full gap-3">
+      <ul className="mt-4 flex flex-wrap dark:text-c-main-white-dark text-c-main-black-light w-full gap-3">
         {
           skills.map(({name, icon}) => {
             return (
