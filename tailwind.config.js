@@ -14,6 +14,7 @@ module.exports = {
         'c-second-text-dark': '#959595',
         'c-main-white-dark': '#EFEFEF',
         'c-main-light': '#FAFAFA',
+        'c-secondary-light': '#DCDCDC',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
