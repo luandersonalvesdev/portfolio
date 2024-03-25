@@ -8,6 +8,11 @@ export default function Projects() {
         <h2 className="font-semibold text-c-main-black-light dark:text-c-main-white-dark md:text-xl text-lg">Projetos</h2>
         <hr class="h-[3px] md:mt-[1px] border-0 rounded-full bg-gradient-to-r from-emerald-400 via-fuchsia-400 to-amber-400"></hr>
       </div>
+      <p
+        className="text-c-second-text-light dark:text-c-second-text-dark mt-1 md:mt-2 md:text-base text-sm text-justify"
+      >
+        Nesta seção, detaco alguns dos meus projetos publicados que eu desenvolvi ou participei ativamente do qual eu tenho mais orgulho.
+      </p>
       <ul className="mt-2 md:mt-5 grid md:grid-cols-3 grid-cols-2 grid-auto-rows-auto text-c-main-black-light dark:text-c-main-white-dark text-xl gap-3">
         {
           allProjects.map((project) => {
